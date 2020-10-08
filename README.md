@@ -11,18 +11,22 @@ Este repositório é uma tentativa de resolução de um desafio proposto pela De
 
 Após ter clonado este repositório, você deve:
 
-- fazer uma cópia do arquivo .env.exemplo e renomeá-lo para: .env
-- dentro do arquivo .env, substituir a string YOUR_API_KEY pela API KEY obtida no site https://developers.giphy.com/docs/
+- fazer uma cópia do arquivo **.env.exemplo** e renomeá-lo para: **.env**
+- dentro do arquivo .env, substituir a string **YOUR_API_KEY** pela API KEY obtida no site https://developers.giphy.com/docs/
 
 ## Construção da máquina docker
 
 No diretório raiz do projeto, você deve criar a máquina docker a partir do seguinte comando:
 
-- docker build -t deliverymuch-test .
+```shell
+docker build -t deliverymuch-test .
+```
 
 Após finazar a criação da máquina docker, executá-la através do comando:
 
-- docker run -p 3000:3000 -d --restart unless-stopped deliverymuch-test
+```shell
+docker run -p 3000:3000 -d --restart unless-stopped deliverymuch-test
+```
 
 ## Utilização
 
